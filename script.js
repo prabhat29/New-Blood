@@ -239,30 +239,30 @@ function startCelebration() {
 // GIFT BOX
 //============================
 
-const gift=document.getElementById("giftBox");
+// const gift=document.getElementById("giftBox");
 
-gift.addEventListener("click",()=>{
+//gift.addEventListener("click",()=>{
 
-gift.classList.toggle("open");
+//gift.classList.toggle("open");
 
-});
+//});
 //===============================
 // ENVELOPE
 //===============================
 
-const envelope = document.getElementById("envelope");
+ const envelope = document.getElementById("envelope");
 
-envelope.addEventListener("click",()=>{
+ envelope.addEventListener("click",()=>{
 
     envelope.classList.toggle("open");
 
     setTimeout(()=>{
 
-        loveLetter.classList.add("show");
+       loveLetter.classList.add("show");
 
     },700);
 
-});
+}); 
 
 //==================================
 // GLOWING ORBS
