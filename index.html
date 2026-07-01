@@ -1,68 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday 🎂</title>
 
-    <!-- CSS File -->
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap"
+rel="stylesheet">
+
 </head>
+<!-- GSAP -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
 
+<!-- tsParticles -->
+<script src="https://cdn.jsdelivr.net/npm/@tsparticles/engine@3/tsparticles.engine.min.js"></script>
+
+<!-- Canvas Confetti -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+<!-- Fireworks -->
+<script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.10.8/dist/index.umd.js"></script>
 <body>
 
-    <!-- Floating Balloons -->
-    <div class="balloons">
-        <div class="balloon red"></div>
-        <div class="balloon blue"></div>
-        <div class="balloon green"></div>
-        <div class="balloon yellow"></div>
-        <div class="balloon pink"></div>
+<!-- Animated Background -->
+
+<div id="background">
+
+    <div id="stars"></div>
+
+    <div id="stars2"></div>
+
+    <div id="stars3"></div>
+
+    <div class="aurora aurora1"></div>
+
+    <div class="aurora aurora2"></div>
+
+    <div class="aurora aurora3"></div>
+
+<div id="orbs"></div>
+
+</div>
+
+<!-- Hero Section -->
+
+<section class="hero">
+
+    <div id="giftBox">
+
+<div class="gift-top"></div>
+
+<div class="gift-body"></div>
+
+</div>
+<!-- ==========================
+      ENVELOPE
+========================== -->
+
+<div id="envelope">
+
+    <div class="envelope-body"></div>
+
+    <div class="envelope-flap"></div>
+
+    <div class="letter-inside">
+
+        ❤️ Click Me ❤️
+
     </div>
 
-    <!-- Main Card -->
-    <div class="container">
+</div>
 
-        <h1>🎉 Happy Birthday 🎉</h1>
+<div class="glass">
 
-        <h2 id="personName"> Maaa  ❤️</h2>
+<h3>Happy Birthday</h3>
 
-        <p id="typingText"></p>
+<h1>My Love ❤️</h1>
 
-        <!-- Cake -->
-        <div class="cake">
-            <div class="cream"></div>
-            <div class="candle">
-                <div class="flame"></div>
-            </div>
-        </div>
+<p id="typing"></p>
 
-        <!-- Buttons -->
-        <div class="buttons">
-            <button id="celebrateBtn">
-                🎁 Celebrate
-            </button>
+<!-- Cake Placeholder -->
 
-            <button id="musicBtn">
-                🎵 Music
-            </button>
-        </div>
+<div id="cake">
+
+    <div class="plate"></div>
+
+    <div class="layer layer-bottom"></div>
+
+    <div class="layer layer-middle"></div>
+
+    <div class="layer layer-top"></div>
+
+    <div class="icing"></div>
+
+    <div class="drips">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="candle">
+        <div class="flame"></div>
+    </div>
+
+</div>
+
+<button id="celebrateBtn">
+
+Celebrate 🎉
+
+</button>
+
+</div>
+
+</section>
+
+<!-- Canvas -->
+ <div id="hearts-container"></div>
+
+<div id="petals-container"></div>
+
+<div id="sparkles-container"></div>
+
+<!-- LOVE LETTER -->
+
+<div id="loveLetter">
+
+    <div class="letter-card">
+
+        <button id="closeLetter">×</button>
+
+        <h2>💜 My Love 💜</h2>
+
+        <p>
+
+        Happy Birthday ❤️
+
+        <br><br>
+
+        You are the best part of my life.
+
+        Every smile of yours makes my world brighter.
+
+        Thank you for loving me, supporting me,
+
+        and making every day beautiful.
+
+        <br><br>
+
+        I promise to stand beside you,
+
+        in every happiness and every challenge.
+
+        <br><br>
+
+        ❤️ Forever Yours ❤️
+
+        </p>
 
     </div>
 
-    <!-- Canvas -->
-    <canvas id="canvas"></canvas>
+</div>
+<!-- ==========================
+      PHOTO GALLERY
+========================== -->
 
-    <!-- Music -->
-    <audio id="birthdaySong" loop>
-        <source src="birthday.mp3" type="audio/mpeg">
-    </audio>
+<section id="gallery">
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+<h2>Our Beautiful Memories ❤️</h2>
+
+<div class="slider">
+
+<div class="slides">
+
+<img src="images/photo1.jpg" alt="Photo 1">
+
+<img src="images/photo2.jpg" alt="Photo 2">
+
+<img src="images/photo3.jpg" alt="Photo 3">
+
+<img src="images/photo4.jpg" alt="Photo 4">
+
+<img src="images/photo5.jpg" alt="Photo 5">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+      MUSIC BUTTON
+========================== -->
+
+<button id="musicBtn">
+🎵 Play Music
+</button>
+
+<audio id="bgMusic" loop>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div id="cursorGlow"></div>
+
+<div id="roseContainer"></div>
+
+<canvas id="canvas"></canvas>
+
+<script src="script.js"></script>
 
 </body>
+
 </html>
