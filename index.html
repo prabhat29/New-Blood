@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday 🎂</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Floating Balloons -->
+    <div class="balloons">
+        <div class="balloon red"></div>
+        <div class="balloon blue"></div>
+        <div class="balloon green"></div>
+        <div class="balloon yellow"></div>
+        <div class="balloon pink"></div>
+    </div>
+
+    <!-- Main Card -->
+    <div class="container">
+
+        <h1>🎉 Happy Birthday 🎉</h1>
+
+        <h2 id="personName">Dear Friend ❤️</h2>
+
+        <p id="typingText"></p>
+
+        <!-- Cake -->
+        <div class="cake">
+            <div class="cream"></div>
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <button id="celebrateBtn">
+                🎁 Celebrate
+            </button>
+
+            <button id="musicBtn">
+                🎵 Music
+            </button>
+        </div>
+
+    </div>
+
+    <!-- Canvas -->
+    <canvas id="canvas"></canvas>
+
+    <!-- Music -->
+    <audio id="birthdaySong" loop>
+        <source src="birthday.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
